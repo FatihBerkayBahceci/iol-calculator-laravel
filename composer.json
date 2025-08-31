@@ -1,0 +1,35 @@
+{
+    "name": "docratech/iol-calculator",
+    "description": "Enterprise IOL Calculator Package for Ophthalmology Calculations",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Docratech",
+            "email": "info@docratech.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Docratech\\IolCalculator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Docratech\\IolCalculator\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Docratech\\IolCalculator\\IolCalculatorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
